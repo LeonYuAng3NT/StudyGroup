@@ -19,10 +19,19 @@ const schema = new Schema({
   query: new ObjectType({
     name: 'Query',
     fields: {
-      me,
+      User,
       content,
     },
   }),
 });
+/*
+const User = new Schema({
+  query: new ObjectType({
+    name:'User',
+    fields{
 
+    }
+  }),
+});
+*/
 export default schema;

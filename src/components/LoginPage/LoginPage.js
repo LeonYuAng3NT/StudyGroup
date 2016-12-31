@@ -9,7 +9,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './LoginPage.scss';
+import style from './LoginPage.scss';
 
 const title = 'Log In';
 
@@ -25,8 +25,8 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
+      <div className={style.root}>
+        <div className={style.container}>
           <h1>{title}</h1>
           <p>...</p>
         </div>
@@ -36,4 +36,4 @@ class LoginPage extends Component {
 
 }
 
-export default withStyles(LoginPage, s);
+export default withStyles(LoginPage, style);
